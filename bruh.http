@@ -1,0 +1,39 @@
+GET http://localhost:5000/api/Todos
+
+###
+POST http://localhost:5000/api/Todos
+Content-Type: application/json
+
+{
+  "Title": "Todo4",
+  "Description": "Todo 4",
+  "IsDone": false,
+  "CreatedAt": "2020-01-01T00:00:00"
+
+}
+
+###
+GET https://localhost:5001/api/Todos/5
+
+###
+PUT https://localhost:5001/api/Todos/5
+Content-Type: application/json
+
+{
+  "Title": "Todo5",
+  "Description": "Todo 5",
+  "IsDone": true
+}
+
+###
+PATCH https://localhost:5001/api/Todos/4
+Content-Type: application/json-patch+json
+
+[{
+  "op": "replace",
+  "path": "/isDone",
+  "value": ""
+}]
+
+###
+DELETE https://localhost:5001/api/Todos/5
