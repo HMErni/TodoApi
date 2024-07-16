@@ -10,6 +10,8 @@ namespace TodoApi2.Data
 
         IEnumerable<Todo> GetAllTodos();
 
+        IEnumerable<Todo> GetNotDoneTodos();
+
         Todo GetTodoById(int id);
 
         void CreateTodo(Todo todo);

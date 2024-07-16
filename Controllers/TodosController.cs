@@ -31,6 +31,7 @@ namespace TodoApi2.Controllers
             return Ok(_mapper.Map<IEnumerable<TodoReadDto>>(TodoItems));
         }
 
+
         // GET: api/Todos/{id}
         [HttpGet("{id}", Name = "GetTodoById")]
         public ActionResult<TodoReadDto> GetTodoById(int id)

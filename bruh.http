@@ -5,9 +5,9 @@ POST http://localhost:5000/api/Todos
 Content-Type: application/json
 
 {
-  "Title": "Todo4",
-  "Description": "Todo 4",
-  "IsDone": false,
+  "Title": "Todo6",
+  "Description": "Todo 6",
+  "IsDone": true,
   "CreatedAt": "2020-01-01T00:00:00"
 
 }
